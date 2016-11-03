@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  node:
+    image: node:6.7
+    #build: .
+    command: bash -c "cd /src/app && npm install && npm run dev"
+    volumes:
+      - "./app:/src/app"
+    ports:
+      - "3000:3000"
+
+#  mongo:
+#    image: mongo:3.2
+#    restart: always
+#    ports:
+#      - "3717:27017"
+#    volumes:
+#      - "./mongo3.2:/data/db"
+#    command: --auth
