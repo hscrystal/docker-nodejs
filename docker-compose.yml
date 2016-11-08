@@ -10,11 +10,11 @@ services:
     ports:
       - "3000:3000"
 
-#  mongo:
-#    image: mongo:3.2
-#    restart: always
-#    ports:
-#      - "3717:27017"
-#    volumes:
-#      - "./mongo3.2:/data/db"
-#    command: --auth
+  mongo:
+    image: mongo:3.2
+    restart: always
+    ports:
+      - "3717:27017"
+    volumes:
+      - "./mongo3.2:/data/db"
+    #command: --auth

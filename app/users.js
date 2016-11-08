@@ -32,11 +32,11 @@ var users = [
 ];
 
 exports.findAll = function() {
-    return users;
+	return users;
 };
 
 exports.findById = function (id) {
-    for (var i = 0; i < users.length; i++) {
-        if (users[i].id == id) return users[i];
-    }
+	for (var i = 0; i < users.length; i++) {
+		if (users[i].id == id) return users[i];
+	}
 };
