@@ -1,2 +1,2 @@
 # ignore "all" file in directory "mongo3.2" in root directory
-mongo3.2/
+/mongo3.2/
