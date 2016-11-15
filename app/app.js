@@ -40,7 +40,9 @@ app.get('/find/:id', function(req, res){
 
 app.post('/newuser', function(req, res) {
   var json = req.body;
-  res.send('Add new ' + json.name + ' Completed'); 
+  db.users.insert(json, function(err,docs) {
+      res.send('Add new ' + docs.name + ' Completed');
+  });
 });
 
 app.listen(3000);
