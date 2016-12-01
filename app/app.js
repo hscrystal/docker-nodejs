@@ -8,6 +8,8 @@ var mongojs = require('mongojs');
 var db = require('./db').connect;
 var app = express();
 
+var config = require('./auth'); // get our config file
+
 // parse application/json
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
